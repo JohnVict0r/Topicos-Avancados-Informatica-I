@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
 #Leitura dos dados
-empregados = pd.read_csv("dados/Salary_Data.csv")
+empregados = pd.read_csv("datasets/Salary_Data.csv")
 
 #Separação dos dados nas variáveis dependente e independente
 
@@ -62,3 +62,16 @@ print("Mean squared error: %.2f"
 # Explained variance score: 1 is perfect prediction
 variancia=100*r2_score(teste_marcacoes, teste_pred)
 print('Variance score: %.2f%%' % variancia)
+
+
+
+# Plot outputs
+plt.scatter(teste, teste_marcacoes, color='black')
+plt.plot(teste, teste_pred, color='blue', linewidth=3)
+
+plt.xticks(())
+plt.yticks(())
+
+plt.show()
+
+
