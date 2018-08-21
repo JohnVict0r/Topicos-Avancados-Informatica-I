@@ -17,10 +17,10 @@ class perceptron(object):
         self.bias = bias
         self.limiar = limiar
     def atualizar_pesos(self, xi, yi, u):
-        for i in len(self.w):
-            self.w[i] += self.taxa_aprendizado*self.xi[i]*(self.yi - self.u)
+        for i in range(len(self.w)):
+            self.w[i] += self.taxa_aprendizado*xi[i]*(yi - u)
             
-        self.limiar += self.taxa_aprendizado*(-1)*(self.yi - self.u)
+        self.limiar += self.taxa_aprendizado*(-1)*(yi - u)
     def treinar_rede(self, x_treino, y_treino):
         for xi,yi in zip(x_treino,y_treino):
             m = np.multiply(xi,self.w) 
@@ -30,7 +30,10 @@ class perceptron(object):
     def previsao(self, x_teste):
         m = np.multiply(x_teste,self.w)
         u = np.sum(m) - self.limiar
-        return u
+        if u< 0:
+            return -1
+        else:
+            return 1
 
 if __name__ == '__main__':    
     
