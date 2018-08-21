@@ -44,4 +44,4 @@ if __name__ == '__main__':
     clf.treinar_rede(x_treino,y_treino)
     y_prev = clf.previsao(x_teste)
     
-    print(y_pred)
+    print(y_prev)
