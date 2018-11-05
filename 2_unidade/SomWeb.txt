@@ -1,0 +1,8 @@
+Segue o link do repositorio da aplicação web desenvolvida em Django+Python para implementar a rede som em tempo real na web!
+
+https://github.com/JohnVictor2017/SOM-API
+
+Contribuidores:
+- John Victor
+- Rodolfo
+- M. Assis
