@@ -1,0 +1,1 @@
+Acesse: https://s3.amazonaws.com/codecademy-content/programs/data-science-path/line-fitter/line-fitter.html
