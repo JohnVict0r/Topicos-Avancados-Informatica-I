@@ -2,3 +2,12 @@
 1541646418 source:/home/john/workspace/Mochila_GA/main.cpp
 	<iostream>
 
+1541703863 source:/home/lab15em/Topicos-Avancados-Informatica-I/Mochila_GA/main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<locale.h>
+	<string>
+	<sstream>
+	<cstdlib>
+
